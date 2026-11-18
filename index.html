@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -681,7 +681,8 @@
 
         // ============ INICIALIZAÇÃO ============
         AOS.init({ duration: 800, once: true, offset: 100 });
-        let currentLang = localStorage.getItem('siteLang') || 'pt';
+        let currentLang = 'en';
+        localStorage.setItem('siteLang', 'en');
         let isDarkMode = localStorage.getItem('darkMode') === 'true';
 
         // Aplicar estado salvo
